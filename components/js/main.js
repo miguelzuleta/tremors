@@ -9,7 +9,7 @@ for (let i = 1; i < vids; i++) {
     vidObj.push({
         elem: 'video',
         attrs: {
-            src: `../assets/vid-${name}.mov`,
+            src: `assets/vid-${name}.mov`,
             controls: ''
         }
     })

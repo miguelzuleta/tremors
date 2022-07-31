@@ -94,7 +94,7 @@ for (var i = 1; i < vids; i++) {
   vidObj.push({
     elem: 'video',
     attrs: {
-      src: "../assets/vid-".concat(name, ".mov"),
+      src: "assets/vid-".concat(name, ".mov"),
       controls: ''
     }
   });
