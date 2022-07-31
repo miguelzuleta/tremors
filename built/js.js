@@ -102,7 +102,16 @@ for (var i = 1; i < vids; i++) {
 
 (0, _append["default"])({
   parent: 'section',
-  child: vidObj
+  child: [{
+    elem: 'article',
+    child: [{
+      elem: 'p',
+      text: 'Saturday July 30 2022'
+    }, {
+      "class": 'video-list',
+      child: vidObj
+    }]
+  }]
 });
 
 },{"./append.js":1}]},{},[2]);

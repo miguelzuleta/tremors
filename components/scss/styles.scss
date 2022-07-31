@@ -6,27 +6,31 @@ body {
     background-color: #111;
     // @include text();
 
-    // width: 100vw;
-    // height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // background-color: $color;
-
     $pad: 50px;
 
+    p {
+        color: white;
+        font-family: monospace;
+        font-size: 24px;
+        margin-bottom: $pad;
+        text-align: center;
+    }
+
     section {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        gap: $pad;
         padding: $pad;
-        box-sizing: border-box; 
+    }
+
+    .video-list {
+        display: flex;
+        gap: $pad;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     video {
-        width: calc(100vw - (#{$pad} * 2));
-        max-height: calc(100vh - (#{$pad} * 2));
+        width: 100%;
+        max-width: 60vh * (16 / 9);
+        max-height: 60vh;
         aspect-ratio: 16 / 9;
     }
 }
