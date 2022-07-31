@@ -3,12 +3,30 @@
 @import 'mixins';
 
 body {
-    @include text();
+    background-color: #111;
+    // @include text();
 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color;
+    // width: 100vw;
+    // height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: $color;
+
+    $pad: 50px;
+
+    section {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: $pad;
+        padding: $pad;
+        box-sizing: border-box; 
+    }
+
+    video {
+        width: calc(100vw - (#{$pad} * 2));
+        max-height: calc(100vh - (#{$pad} * 2));
+        aspect-ratio: 16 / 9;
+    }
 }

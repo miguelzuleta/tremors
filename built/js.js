@@ -86,12 +86,23 @@ var _append = _interopRequireDefault(require("./append.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+var vids = 25;
+var vidObj = [];
+
+for (var i = 1; i < vids; i++) {
+  var name = i.toString().padStart(3, 0);
+  vidObj.push({
+    elem: 'video',
+    attrs: {
+      src: "../assets/vid-".concat(name, ".mov"),
+      controls: ''
+    }
+  });
+}
+
 (0, _append["default"])({
-  parent: 'body',
-  child: [{
-    elem: 'p',
-    text: 'treert'
-  }]
+  parent: 'section',
+  child: vidObj
 });
 
 },{"./append.js":1}]},{},[2]);
